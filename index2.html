@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" href="styles.css">
+	<title>chit-chat </title>
+	<script src="aes2.js"></script>
+	<script src="aes.js"></script>
+	<script src="myScript.js"></script>
+    </head>
+    <body onload="loading()" >
+	<header>
+	  <p>chit-chat</p>
+	</header> 
+	<div id="messages">
+	</div>
+	
+	<dialog id="myDialog">
+	<div id="myModal" class="modal">
+
+  
+  	<div class="modal-content">
+    	<span class="close">&times;</span>
+    	<form class="form-container">
+    	<h1>info</h1>
+
+    	<label for="name"><b>Name</b></label>
+    	<input id="name" type="text" placeholder="name">
+
+    	<label for="userid"><b>userid</b></label>
+    	<input id="userId" type="text" placeholder="enter userid">
+
+    	<button type="button" onclick="getId()" class="btn">Login</button>
+ 
+  	</form>
+  	</div>
+
+	</div>
+	</dialog>
+	
+	<footer>
+	<form id="form1">
+		<input id="input" type="text" name="message" placeholder="type here">
+		<input type="button" onclick="myfunction()" value="send">
+	</form>
+	</footer>
+    </body>
+</html>
