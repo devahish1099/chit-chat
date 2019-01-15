@@ -14,6 +14,34 @@
 	width :fit-content;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.column1 {
+  float: left;
+  width: 66.66%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+	.column1{
+		width: 100%;
+	}
+}
+
 body{
 background-color:#f7efe1;
 }
@@ -94,3 +122,34 @@ footer{
   right:0;
 
 }
+#loginpage {
+	display: block;
+	position: fixed;
+	z-index : 10;
+	height: 100%;
+	margin: 0;
+	width : 100%;
+
+	background-image: url("Login.jpg");
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+
+	.login{
+		width : 320px;
+		height : 420px
+		color : #ffffff;
+		background : #000;
+		top : 50%;
+		left : 50%;
+		position : absolute;
+		box-sizing : border-box;
+		transform : translate(-50%,-50%);
+		font-color:#ffffff;
+
+	}

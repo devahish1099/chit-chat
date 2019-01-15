@@ -6,42 +6,53 @@
 	<script src="aes2.js"></script>
 	<script src="aes.js"></script>
 	<script src="myScript.js"></script>
+  <style>
+
+  </style>
     </head>
-    <body onload="loading()" >
-	<header>
-	  <p>chit-chat</p>
-	</header> 
-	<div id="messages">
-	</div>
-	
-	<dialog id="myDialog">
-	<div id="myModal" class="modal">
+    <body  >
+        <div id = "loginpage">
 
-  
-  	<div class="modal-content">
-    	<span class="close">&times;</span>
-    	<form class="form-container">
-    	<h1>info</h1>
 
-    	<label for="name"><b>Name</b></label>
-    	<input id="name" type="text" placeholder="name">
+          <div class="login">
+            <label for="uname"><b>Name</b></label>
+            <input id="name" type="text" placeholder="Enter Username" name="uname" requir>
 
-    	<label for="userid"><b>userid</b></label>
-    	<input id="userId" type="text" placeholder="enter userid">
+            <label for="userid"><b>userId</b></label>
+            <input id="userId" type="text" placeholder="Enter Password" name="userid" required>
 
-    	<button type="button" onclick="getId()" class="btn">Login</button>
- 
-  	</form>
-  	</div>
+            <button type="button" onclick="getId()" class="btn">Login</button>
 
-	</div>
-	</dialog>
-	
-	<footer>
-	<form id="form1">
-		<input id="input" type="text" name="message" placeholder="type here">
-		<input type="button" onclick="myfunction()" value="send">
-	</form>
-	</footer>
-    </body>
+          </div>
+
+
+
+
+        </div>
+        <div>
+          <header>
+	           <p>chit-chat</p>
+	        </header>
+
+
+          <div class="row">
+          <div class="column">
+
+          </div>
+          <div class="column1">
+
+          <div id="messages">
+    	    </div>
+
+          </div>
+          </div>
+
+	        <footer>
+	           <form id="form1" action="#">
+		             <input id="input" type="text" name="message" placeholder="type here">
+		             <input type="button" onclick="myfunction()" value="send">
+	           </form>
+	        </footer>
+          </div>
+      </body>
 </html>
